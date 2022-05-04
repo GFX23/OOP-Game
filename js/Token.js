@@ -7,10 +7,10 @@ class Token {
 
     drawHTMLToken() {
         const div = document.createElement("div")
-        document.querySelector("#game-board-underlay").append(div)
+        document.querySelector("#game-board-underlay").appendChild(div)
         div.setAttribute("id", this.id)
         div.setAttribute("class", "token")
-        div.style.backgroundColor = owner.color
+        div.style.backgroundColor = this.owner.color
     }
 
     get htmlToken() {
